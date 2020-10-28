@@ -1,0 +1,58 @@
+<style>
+  .choose-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .choose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+</style>
+
+<label for="userName">Имя:</label>
+<input type="text" id="userName" placeholder="Ольга">
+
+<label for="userPhone">Телефон:</label>
+<input type="tel" id="userPhone" placeholder="+7 (999) 123-45-678">
+
+<label for="userComment">Введите комментарий:</label>
+<textarea name="" id="userComment" cols="50" rows="10" placeholder="Очень хочу вкусную пиццу, жду"></textarea>
+
+<p>Выберите размер пиццы:</p>
+<div class="choose-wrap">
+  <div class="choose">
+    <label for="small">Маленькая 25 см</label>
+    <input type="radio" id="small" name="size">
+  </div>
+
+  <div class="choose">
+    <label for="middle">Средняя 30 см</label>
+    <input type="radio" id="middle" name="size" checked>
+  </div>
+
+  <div class="choose">
+    <label for="big">Большая 40 см</label>
+    <input type="radio" id="big" name="size">
+  </div>
+</div>
+
+<p>Добавить в пиццу:</p>
+<div class="choose-wrap">
+  <div class="choose">
+    <label for="cucumber">Огурец</label>
+    <input type="checkbox" id="cucumber">
+  </div>
+
+  <div class="choose">
+    <label for="bacon">Бекон</label>
+    <input type="checkbox" id="bacon">
+  </div>
+
+  <div class="choose">
+    <label for="cheese">Сыр моцарелла</label>
+    <input type="checkbox" id="cheese" checked>
+  </div>
+</div>
